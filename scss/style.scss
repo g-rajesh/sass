@@ -1,0 +1,89 @@
+@import 'config';
+@import 'button';
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: $light-color;
+     font-family: $font-familt;
+     line-height: 1.6;
+     font-size: 16px;
+}
+
+li{
+     list-style: none;
+}
+
+a{
+     text-decoration: none;
+}
+
+img {
+     width: 100%;
+}
+
+.showcase {
+     @include set-background($primary-color);
+     height: 70vh;
+
+     .container {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 30px;
+          overflow: auto;
+
+          nav{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+               }
+          
+               li{
+                    padding: 15px;
+               }
+          
+
+               a:hover{
+                    color: $secondary-color;
+               }
+          }
+
+          a {
+               color: #fff;
+          }
+     }
+
+     &-content {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h1{
+               font-size: 50px;
+               line-height: 1.2;
+               margin-top: 20px;
+          }
+
+          p{
+               margin: 20px 0;
+          }
+
+          img{
+               width: 50%;
+               object-fit: contain;
+          }
+     }
+
+}
+
+@import 'mobile';

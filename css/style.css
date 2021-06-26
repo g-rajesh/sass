@@ -1,0 +1,121 @@
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #418bff;
+  margin-right: 20px;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  background-color: #0e6cff;
+  color: #fff;
+  height: 70vh;
+}
+
+.showcase .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: auto;
+}
+
+.showcase .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase .container nav li {
+  padding: 15px;
+}
+
+.showcase .container nav a:hover {
+  color: #ff8700;
+}
+
+.showcase .container a {
+  color: #fff;
+}
+
+.showcase-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.showcase-content p {
+  margin: 20px 0;
+}
+
+.showcase-content img {
+  width: 50%;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 70vh;
+  }
+  .showcase .container nav h1 {
+    font-size: 16px;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content h1 {
+    font-size: 32px;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
